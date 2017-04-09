@@ -1,0 +1,104 @@
+<html>
+<head><title>Watch-iStore</title>
+<link type="icon" href="..\pic\applelogoblack.png" rel="icon"/>
+<link type="text/css" rel="stylesheet" href="..\mystyle.css"/>
+</head>
+<div>
+  <ul>
+  <li><a href="..\index.html"><img src="..\pic\applelogo.png" style="max-height: 25;max-width: 25;"></a></li>
+  <li class="dropdown">
+    <a href="..\iphone\Iphone product list.html" class="dropbtn">iPhone</a>
+    <div class="dropdown-content">
+	  <a href="..\iphone\iphone se.html">iPhone SE</a>
+      <a href="..\iphone\iphone 6s.html">iPhone 6s </a>
+      <a href="..\iphone\iphone 6s plus.html">iPhone 6s Plus</a>
+      <a href="..\iphone\iphone 7.html">iPhone 7</a>
+	  <a href="..\iphone\iphone 7 plus.html">iPhone 7 Plus</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="..\ipad\ipad product list.html" class="dropbtn">iPad</a>
+    <div class="dropdown-content">
+	  <a href="..\ipad\ipad 9.7.html">iPad air</a>
+      <a href="..\ipad\ipad air 2.html">iPad air 2 </a>
+      <a href="..\ipad\ipad mini 4.html">iPad mini</a>
+      <a href="..\ipad\ipad pro.html">iPad Pro</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="..\mac\macbook product list.html" class="dropbtn">Mac</a>
+    <div class="dropdown-content">
+	  <a href="..\mac\imac.html">iMac</a>
+      <a href="..\mac\macbook pro.html">Macbook Pro </a>
+      <a href="..\mac\macbook.html">Macbook</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a class="dropbtn">Watch</a>
+    <div class="dropdown-content">
+	  <a href="..\apple watch\apple watch series 1.html">Apple Watch series 1 </a>
+	  <a href="..\apple watch\apple watch series 2.html">Apple Watch series 2</a>
+      <a href="..\apple watch\apple watch edition sport.html">Apple Watch sport edition</a>
+    </div>
+  </li>
+   </li>
+    <li class="dropdown">
+    <a href="..\feedback.html" class="dropbtn">Feedback</a>
+    </div>
+  </li>
+</ul>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="..\pic\applewatchs1.1.jpg" style="max-height: 1500;max-width:100%;">
+  
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4	seconds
+}
+</script>
+<div class="bodycolor" style="text-align:justify;margin-left:auto;margin-right:auto;width:50%">
+<center>
+<h1><font size="6">Apple Watch Series 1</font></h1>
+<font size="4">
+<p>Durable, lightweight aluminum cases in silver, space gray, gold, and rose gold. Sport Band in a variety of colors. All the features of the original Apple Watch, plus a new dual-core processor for faster performance. All models run watchOS 3. Requires an iPhone 5 or later.
+Colors: Silver Aluminium, Gold Aluminium, Space Gray Aluminium, Rose Gold Aluminium</p>
+</font>
+<br><br>
+<p><center><font size="6">From RM1,199</font></center></p>
+<center>
+</div>
+
+</body>
+</html> 
